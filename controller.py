@@ -79,7 +79,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # Update images
         logoImage = cv2.imread("logo.jpg")
         logoImage = cv2.cvtColor(logoImage, cv2.COLOR_BGR2RGB)
-        formatedlogoImage = self.formatImages(logoImage, dim=(149, 149))
+        formatedlogoImage = formatImages(logoImage, dim=(149, 149))
         self.ui.label.setPixmap(QtGui.QPixmap.fromImage(formatedlogoImage))  # Put the image into the label
 
         # Update CSS
@@ -111,7 +111,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.statusBar().showMessage("Snapshot button clicked!")
         self.snapshotImg = cv2.resize(self.resultImg, (320, 240))
         self.snapshotImg = cv2.cvtColor(self.snapshotImg, cv2.COLOR_RGB2BGR)
-        formatedImage = self.formatImages(self.snapshotImg, dim=(320, 240))
+        formatedImage = formatImages(self.snapshotImg, dim=(320, 240))
         self.ui.label_9.setPixmap(QtGui.QPixmap.fromImage(formatedImage))  # Put the image into the label
 
 
@@ -157,7 +157,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def updateMainScreen(self):
         self.resultImg, self.type = model.run(self.originalImg)
         self.resultImg = cv2.cvtColor(self.resultImg, cv2.COLOR_RGB2BGR)
-        formatedMainImage = self.formatImages(self.resultImg, dim=(640, 480))
+        formatedMainImage = formatImages(self.resultImg, dim=(640, 480))
         self.ui.label_2.setPixmap(QtGui.QPixmap.fromImage(formatedMainImage)) # Put the image into the label
 
         if self.type == "1" or self.type == "5" or self.type == "7":
@@ -171,6 +171,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def exitProgram(self):
         print("Program terminated!")
+        global runable
+        runable = False # Stop the thread
         exit(app.exec_())
 
     def changeToPage2(self):
