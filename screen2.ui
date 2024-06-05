@@ -14,19 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>260</y>
-      <width>451</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Back</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -46,7 +33,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>logo.jpg</pixmap>
+     <pixmap>../../.designer/backup/logo.jpg</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -63,6 +50,194 @@
     </property>
     <property name="text">
      <string>Smart Diagnostic System</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>881</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>400</width>
+        <height>300</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>chart.JPG</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>400</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt; background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Summary of the weekly diagnosis</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>20</y>
+        <width>391</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Please click snapshot to capture the type of the diagnostic condition.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>121</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Monday</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tuesday</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wednesday</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Thursday</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Friday</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Saturday</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sunday</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>650</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../.designer/backup/schdule.JPG</pixmap>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>530</y>
+      <width>320</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(100, 100, 100);
+color: white</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>290</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>240</y>
+      <width>320</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);
+color: Black</string>
+    </property>
+    <property name="text">
+     <string>Type</string>
     </property>
    </widget>
   </widget>
